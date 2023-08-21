@@ -1,0 +1,729 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,100;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Tilt+Prism&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /*background-color*/
+    --primary-color: #044b14;
+    --secondary-color: #2adb24;
+    --bg-colors: #baf0cc;
+    --third-bg: #e4ebe6;
+    --bg-white: #fff;
+    --bg-black: #000;
+
+    /* Text style */
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: font-family: 'Roboto', sans-serif;
+    --primary-text: #044b14;
+    --secondary-text: #ec2308;
+    --text-white: #fff;
+    --text-black: #151515;
+    --text-gray: #333;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-image: linear-gradient(rgba(1, 2, 2, 0.3), rgba(12, 14, 12, 0.021), rgba(12, 14, 12, 0.3)), url(./images/organic-3.avif);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--third-bg);
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: .375rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 30px;
+}
+
+section {
+    padding: 3.125rem;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: bold;
+    color: var(--text-white);
+    margin-bottom: 1.25rem;
+    font-family: var(--secondary-font);
+}
+
+h3 {
+    margin-bottom: 1.9rem;
+    line-height: 2.9rem;
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: var(--primary-text);
+    font-family: var(--secondary-font);
+}
+
+h3 span {
+    color: var(--secondary-color);
+}
+
+h5 {
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--primary-text);
+    font-weight: 500;
+    font-family: var(--secondary-font);
+}
+
+h6 {
+    font-size: .5rem;
+    color: var(--primary-text);
+    margin-bottom: .98rem;
+    font-weight: 300;
+    font-family: var(--secondary-font);
+}
+
+p {
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--text-black);
+    line-height: 1.625rem;
+}
+
+
+/*-----------navbar-----------------*/
+.header_wrapper .navbar {
+    background: var(--bg-colors);
+    height: 3.5rem;
+    box-shadow: 10px 5px 5px gray;
+}
+
+.container .navbar-toggler {
+    border: none;
+}
+
+.container .navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.container .navbar-brand {
+    font-size: 1.5rem;
+    color: var(--primary-text);
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.container .nav-item a {
+    text-transform: uppercase;
+    color: var(--text-black);
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+.container .nav-item a:hover {
+    color: var(--secondary-color);
+}
+
+.d-flex .search {
+    width: 80%;
+    height: 2rem;
+    outline: none;
+    border-radius: 60px;
+    border-color: 3px solid #044b14;
+    margin-right: -35px;
+}
+
+.d-flex .btn {
+    width: 40%;
+    height: 2rem;
+    border-radius: 60px;
+    color: var(--text-white);
+    font-weight: 400;
+    background-color: var(--primary-color);
+
+    outline: none;
+    border: none;
+}
+
+/*---------------Hero-----------------*/
+.hero .content {
+    padding: 0 5%;
+    margin-top: 20%;
+    margin-bottom: 15%;
+    color: var(--text-black);
+    height: calc(100% - 3.5rem);
+}
+
+.hero .content p {
+    margin: 25px 10px;
+    color: var(--text-gray);
+}
+
+.hero .content button {
+    height: 2rem;
+    width: 12%;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    margin: 5px 30px;
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    font-weight: 500;
+}
+
+.hero .content button:hover {
+    background-color: var(--bg-colors);
+    color: var(--bg-black);
+    font-weight: 500;
+}
+
+/*----------------------feature-------------------*/
+.feature {
+    width: 100%;
+    height: 40vh;
+    background-color: var(--third-bg);
+}
+
+.feature h5 {
+    color: var(--text-black);
+    margin: 20px 0;
+}
+
+/*----------------------Trend-------------------*/
+.trend {
+    background-color: var(--third-bg);
+    width: 100%;
+    height: 150vh;
+}
+
+.trend h3 {
+    color: var(--primary-text);
+}
+
+.trend h6 {
+    color: var(--secondary-text);
+}
+
+.trend .card-bd {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.trend .card-bd:hover {
+    box-shadow: 10px 5px 5px gray;
+}
+
+.trend .card-bd img {
+    width: 7rem;
+    height: 10rem;
+}
+
+.trend button {
+    height: 2rem;
+    width: 12vw;
+    border: none;
+    border-radius: 20px;
+    color: var(--bg-white);
+    font-weight: 500;
+    background-color: var(--primary-color);
+}
+
+.trend button:hover {
+    background-color: var(--bg-colors);
+    border: 2px solid var(--primary-color);
+    color: var(--text-black);
+}
+
+/*-------------------about---------------------*/
+.slid {
+    width: 100%;
+    height: 525vh;
+    background-color: var(--third-bg);
+
+}
+
+.slid h3 {
+    color: var(--primary-text);
+}
+
+.slid .carousel {
+    width: 70%;
+    height: 60vh;
+    margin: auto;
+}
+
+.slid .carousel img {
+    width: 100%;
+    height: 60vh;
+}
+
+.slid .carousel .s-content {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text-white)
+}
+
+.slid .carousel .s-content h4 {
+    color: var(--text-black);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.slid .carousel .s-content p {
+    color: var(--text-gray);
+}
+
+/*------------------community-------------------------------*/
+.community {
+    width: 100%;
+    height: 110vh;
+    background-color: var(--third-bg);
+}
+
+.community .card {
+    height: 60vh;
+}
+
+.community .card p {
+    font-size: .85rem;
+    padding: 10px 20px;
+}
+
+.community .card-bd img {
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.community button {
+    height: 2rem;
+    width: 40%;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    font-weight: 500;
+}
+
+.community button:hover {
+    border: 2px solid var(--primary-color);
+    background-color: var(--bg-colors);
+    color: var(--text-black);
+}
+
+/*----------------------Reivew-----------------------------*/
+.review {
+    height: 110vh;
+    background-color: var(--third-bg);
+}
+
+.review .card-bd img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+}
+
+.review .card {
+    height: 65vh;
+}
+
+.review .card p {
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    height: 30vh;
+    line-height: 1rem;
+}
+
+.review .card .star i {
+    color: rgb(255, 217, 2);
+    height: 5vh;
+}
+
+.review .card h6 {
+    font-size: .6rem;
+    font-weight: 400;
+}
+
+/*----------------Contact------------------------*/
+.contact {
+    width: 100%;
+    height: 65vh;
+    background-color: #d4f8e0;
+}
+
+.contact .rt h6 {
+    color: var(--primary-text);
+}
+
+.contact .left  button {
+    width: 30%;
+    height: 2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    font-weight: 500;
+    margin-top: .7rem;
+}
+
+.contact .left button:hover {
+    color: var(--text-black);
+    border: 2px solid var(--primary-text);
+    background-color: var(--bg-colors);
+}
+
+/*-----------------footer-----------------------*/
+footer {
+    background-color: #030503;
+    color: #afaaaa;
+}
+
+footer .social p {
+    color: #b4b3b3;
+}
+
+footer .icon i {
+    color: #9e9a9a;
+    font-size: 1rem;
+}
+
+footer .list li a {
+    color: #9e9a9a;
+    font-size: .8rem;
+}
+
+
+
+@media(max-width:990px) {
+        h1 {
+            font-size: 3rem;
+
+        }
+
+        h3 {
+
+            font-size: 2rem;
+        }
+
+        h3 span {
+            color: var(--secondary-color);
+        }
+
+        h5 {
+            font-size: 1.2rem;
+        }
+
+        h6 {
+            font-size: .4rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        
+
+    .container {
+        padding: 0;
+    }
+
+    nav .container .dn {
+        background-color: var(--bg-colors);
+        height: 90vh;
+        width: 100%;
+        
+    }
+
+    .navbar .navbar-nav {
+        text-align: center;
+        background-color: var(--bg-colors);
+        width: 100%;
+    }
+    .navbar .navbar-nav .nav-item a{
+        margin: 15px 0;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+
+    .navbar .d-flex {
+        background-color: var(--bg-colors);
+        width: 50%;
+        margin: auto;
+    }
+
+    .navbar .nav-item a {
+        font-weight: 700;
+    }
+
+    .hero {
+        margin-bottom: 1rem;
+    }
+    .hero .content p{
+        font-weight: 500;
+    }
+
+    .hero .content {
+        padding: 12%;
+        height: 60vh;
+    }
+    .hero .content p{
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .hero .content button {
+        width: 20%;
+    }
+
+    .feature {
+        height: 30vh;
+    }
+     .slid{
+        height: auto;
+     }
+    .trend {
+        height: auto;
+    }
+    .trend button{
+        width: 100%;
+    }
+    .community{
+        height: auto;
+    }
+    .community .card{
+        height: auto;
+    }
+    .review{
+        height: auto;
+    }
+    .review .card p{
+        font-size: 1rem;
+    padding: 20px;
+    height: auto;
+    line-height: 1.3rem;
+    }
+    .review .card{
+        height: 70vh;
+    }
+    .contact{
+        height: auto;
+    }
+}
+
+
+
+@media(max-width:765px) {
+    
+        h1 {
+            font-size: 2.5rem;
+
+        }
+
+        h3 {
+
+            font-size: 1.8rem;
+        }
+
+        h3 span {
+            color: var(--secondary-color);
+        }
+
+        h5 {
+            font-size: 1rem;
+        }
+
+        h6 {
+            font-size: .4rem;
+        }
+
+        p {
+            font-size: .6rem;
+        }
+        nav .container .dn{
+            height: auto;
+        }
+
+        
+    .hero .content button{
+     width: 30%;
+
+    }
+    .community{
+        height: auto;
+    }
+    .community .card{
+        height: auto;
+    }
+    .community .card p{
+        font-size: 1rem;
+        font-weight: 400;
+
+    }
+    .community button{
+        width: 60%;
+    }
+    .review{
+        height: auto;
+    }
+    .review .card{
+        height: auto;
+    }
+    .review .card p{
+        font-weight:400 ;
+    }
+    .contact{
+        height: auto;
+    }
+    .contact .left button{
+        margin-right: 25%;
+    }
+    .slid{
+        height:auto ;
+    }
+    .slid .carousel{
+        width: 100%;
+    }
+    
+    }
+
+    @media(max-width:575px) {
+        
+            h1 {
+                font-size: 2.5rem;
+
+            }
+
+            h3 {
+
+                font-size: 1.8rem;
+            }
+
+            h3 span {
+                color: var(--secondary-color);
+            }
+
+            h5 {
+                font-size: 1rem;
+            }
+
+            h6 {
+                font-size: .4rem;
+            }
+
+            p {
+                font-size: .6rem;
+                font-weight: 500;
+            }
+            
+     .hero{
+        height: 80vh;
+     }
+     .hero .content p{
+        font-weight: 500;
+     }
+       .feature{
+        height: 70vh;
+       }
+       .feature .row{
+        margin: 10px 20%;
+       }
+        .feature img{
+            width:50px;
+            height: 50px;
+        }
+         .feature h5{
+            font-size: 1rem;
+         }
+
+
+
+
+
+
+
+
+
+
+    }
+        @media(max-width:450px) {
+            
+                h1 {
+                    font-size: 2rem;
+                }
+
+                h3 {
+
+                    font-size: 1.5rem;
+                }
+
+                h3 span {
+                    color: var(--secondary-color);
+                }
+
+                h5 {
+                    font-size: 1rem;
+                }
+
+                h6 {
+                    font-size: .3rem;
+                }
+
+                p {
+                    font-size: .8rem;
+                }
+            
+            body{
+                background-image: linear-gradient(rgba(1, 2, 2, 0.4), rgba(12, 14, 12, 0.12), rgba(12, 14, 12, 0.4)), url(./images/organic-mobile.avif);
+
+                background-color: var(--third-bg);
+            }
+            .hero{
+                height:90vh;
+            }
+            .hero .content{
+                padding: 45% 10%; 
+                text-align: center; 
+            }
+            .feature{
+                height: 60vh;
+            }
+            .slid{
+                padding: 10px 5px;
+            }
+            .slid .carousel{
+                height: 35vh;
+            }
+            .slid .carousel img{
+                height: 35vh;
+            }
+            .community button{
+                width: 80%;
+            }
+        }
