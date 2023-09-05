@@ -193,6 +193,14 @@ p {
     color: var(--bg-black);
     font-weight: 500;
 }
+.hero .content button a{
+    text-decoration: none;
+    color: var(--text-white);
+}
+/*---------------------------------------------------------------*/
+.hero .content button a:hover{
+    color: var(--text-black);
+}
 
 /*----------------------feature-------------------*/
 .feature {
