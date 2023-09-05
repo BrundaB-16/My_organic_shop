@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>organic shop</title>
+    
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="./productt.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+<!---------------------------navbar---------------------------------->
+<header class="header_wrapper">
+    <nav class="navbar navbar-expand-lg  fixed-top  ">
+      <div class="container">
+        <a class="navbar-brand" href="#">Organic Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <!---  <span class="navbar-toggler-icon"></span>--->
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse dn" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item my-1">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item my-1">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+
+            <li class="nav-item my-1">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+
+            <li class="nav-item my-1">
+              <a class="nav-link" href="./Offer.html">offer</a>
+            </li>
+            <li class="nav-item my-1">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex my-1" role="search">
+            <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success py-0 px-2 " type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--========================hero==========================-->
+    <div class="Phero col-lg-10 col-md-10 col-sm-10">
+      <div class="content">
+        <h1>Get Up to 80% Off</h1>
+        <h4>On Every Natural Products.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit add. <br> Mollitia fugiat esse distinctio, eveniet beatae deleniti!</p>
+      <a href="./Offer.html">Shop now</a>
+      </div>
+    </div>
+  </header>  
+<!--===========================Product list======================-->
+<section class="P-list ">
+  <div class="P-head text-center py-4 ">
+      <h3>Shop By Category</h3> 
+  </div>
+  <div class="container col-10 col-md-8 col-xs-8 py-3 m-auto">
+    <div class="row ">
+      
+      <div class="col-lg-3 col-md-3 col-sm-3 col-6 text-center mt-2 ">
+        <div class="card mb-2 m-auto">
+          <div class="card-bd">
+          <a href="#Grossery"><img src="./product/product-2.jpg" class="img-fluid"></a>
+          </div>
+        </div>
+        <h6>Grossery</h6>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-6 text-center mt-2 ">
+        <div class="card  mb-2 m-auto">
+          <div class="card-bd">
+            <a href="#fresh"><img src="./product/product-3.png" class="img-fluid"></a>
+          </div>
+        </div>
+        <h6>Fresh</h6>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-6 text-center mt-2 ">
+        <div class="card mb-2 m-auto">
+          <div class="card-bd">
+            <a href="#milk"><img src="./product/product4.jpg" class="img-fluid"></a>
+          </div>
+        </div>
+        <h6>Milk-Product</h6>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-6 text-center mt-2 ">
+        <div class="card mb-2 m-auto">
+          <div class="card-bd">
+            <a href="#other"><img src="./product/product-6.png" class="img-fluid"></a>
+          </div>
+        </div>
+        <h6>Others</h6>
+      </div>
+    </div>
+  </div>
+</section>
+<Section class="slider py-5">
+  <div id="carouselExample" class="carousel slide m-auto">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./product/1.jpg" class="d-block w-100" alt="...">
+        <div class="line"><h1>Natural Products From Nature.</h1></div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./product/o.jpg" class="d-block w-100" alt="...">
+        <div class="line"><h1>Get Your Fresh Fruits And vegetables From Farm.</h1></div>
+      </div>
+      
+      <div class="carousel-item">
+        <img src="./product/2.jpg" class="d-block w-100" alt="...">
+        <div class="line"><h1>Order Rice,Atta And Dal.</h1></div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</Section>
+<section class="Grossery" id="Grossery">
+  <div class="P-head text-center py-2 ">
+    <h3>OUR GROSSERY</h3> 
+</div>
+
+<div class="container col-12 col-md-12 col-xs-8 py-3 m-auto ">
+  <div class="row ">
+    
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/g-1.jfif" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Oils</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+          <a href="#"><img src="./product/g-10.jfif" class="img-fluid"></a>
+        </div>
+      </div>  
+      <p>Rice Bags</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2 ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+          <a href="#"><img src="./product/g-11.png" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Pickels</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2 ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+          <a href="#"><img src="./product/g-3.jpg" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Noodles</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2 ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+          <a href="#"><img src="./product/g-4.jpg" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Break Fast</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2 ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+          <a href="#"><img src="./product/g-5.avif" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Corn Flakes</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2 ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+          <a href="#"><img src="./product/g-6.jpg" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Snack</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2 ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+          <a href="#"><img src="./product/g-7.webp" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Choclates</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2 ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+          <a href="#"><img src="./product/g-8.jfif" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Sauce</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2 ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+          <a href="#"><img src="./product/g-9.jfif" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Daal</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2 ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+          <a href="#"><img src="./product/g-6.jpg" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Cookies</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2 ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+          <a href="#"><img src="./product/g-3.jpg" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Pastha</p>
+    </div>
+    
+</section>
+<!--=================Fresh================-->
+<section class="fresh" id="fresh">
+  <div class="P-head text-center py-2 ">
+    <h3>Fresh</h3> 
+</div>
+
+<div class="container col-12 col-md-12 col-xs-8 py-3 m-auto">
+  <div class="row ">
+    
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/f-2.webp" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Fruits</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/f-3.webp" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>vegetables</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/f-4.avif" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Kiwi</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/f-5.jpg" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Grap</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/f-6.jpg" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Green</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/f-7.jpeg" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Other</p>
+    </div>
+  </div>
+  </div>
+</section>
+<!--================Milk Products==============-->
+<section class="milk" id="milk">
+  <div class="P-head text-center py-2 ">
+    <h3>Milk Products</h3> 
+</div>
+
+<div class="container col-12 col-md-12 col-xs-8 py-3 m-auto">
+  <div class="row ">
+    
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/m-1.png" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Panneer</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/m-2.jpg" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Butter</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/m-3.webp" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Ghee</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/m-4.jpg" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Yogart</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/m-5.png" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Cream</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/m-6.jpg" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Cheese</p>
+    </div>
+    
+  </div>
+  </div>
+</section>
+
+<!--==========================other===================-->
+
+<section class="other" id="other">
+  <div class="P-head text-center py-2 ">
+    <h3>Other Products</h3> 
+</div>
+
+<div class="container col-12 col-md-12 col-xs-8 py-3 m-auto">
+  <div class="row ">
+    
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/o-1.webp" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Cotton Bags</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/o-2.jfif" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Body Oils</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/o-3.jfif" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Sunscream</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/o-4.webp" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Soaps</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/o-5.jpg" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Creams</p>
+    </div>
+    <div class=" col-lg-2 col-md-2 col-sm-3 col-4 text-center mt-2  ">
+      <div class="card border-0 mb-2 m-auto">
+        <div class="card-bd m-auto">
+        <a href="#"><img src="./product/o-6.jpg" class="img-fluid"></a>
+        </div>
+      </div>
+      <p>Sampoo</p>
+    </div>
+    
+  </div>
+  </div>
+</section>
+<section class="foot">
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-1 my-0 border-top">
+  <div class="col mb-3 social">
+
+    <p class=" mx-5">Social media</p>
+    <div class="icon mx-4">
+      <i class="fa-brands fa-instagram mx-2"></i>
+      <i class="fa-brands fa-square-twitter mx-2"></i>
+      <i class="fa-brands fa-square-facebook mx-2"></i>
+    </div>
+  </div>
+  <div class="col mb-3 list">
+
+
+  </div>
+  <div class="col mb-3 list">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a></li>
+    </ul>
+  </div>
+
+  <div class="col mb-3 list">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a></li>
+    </ul>
+  </div>
+
+  <div class="col mb-3 list">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a></li>
+    </ul>
+  </div>
+</footer>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+</html>
