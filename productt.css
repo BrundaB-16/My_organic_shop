@@ -1,0 +1,561 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,100;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Tilt+Prism&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--primary-font);
+    background-image: linear-gradient(rgba(1, 2, 2, 0.3), rgba(12, 14, 12, 0.021), rgba(12, 14, 12, 0.3)), url(./product/o.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:92vh;
+}    
+
+:root {
+    /*background-color*/
+    --primary-color: #044b14;
+    --secondary-color: #2adb24;
+    --bg-colors: #baf0cc;
+    --third-bg: #d5dfd8fb;
+    --bg-white: #0e0a0a1e;
+    --bg-black: #000;
+
+    /* Text style */
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: font-family: 'Roboto', sans-serif;
+    --primary-text: #044b14;
+    --secondary-text: #ec2308;
+    --text-white: #fff;
+    --text-black: #151515;
+    --text-gray: #333;
+}
+::-webkit-scrollbar {
+    width: .375rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 30px;
+}
+/*================nav=====================*/
+
+.header_wrapper .navbar {
+    background: var(--bg-colors);
+    height: 3.5rem;
+    box-shadow: 10px 5px 5px gray;
+}
+
+.container .navbar-toggler {
+    border: none;
+}
+
+.container .navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.container .navbar-brand {
+    font-size: 1.5rem;
+    color: var(--primary-text);
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.container .nav-item a {
+    text-transform: uppercase;
+    color: var(--text-black);
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+.container .nav-item a:hover {
+    color: var(--secondary-color);
+}
+
+.d-flex .search {
+    width: 80%;
+    height: 2rem;
+    outline: none;
+    border-radius: 60px;
+    border-color: 3px solid #044b14;
+    margin-right: -35px;
+}
+
+.d-flex .btn {
+    width: 40%;
+    height: 2rem;
+    border-radius: 60px;
+    color: var(--text-white);
+    font-weight: 400;
+    background-color: var(--primary-color);
+
+    outline: none;
+    border: none;
+}
+    /*--------------------hero-----------*/
+
+.Phero .content{
+padding: 15%;
+}
+.Phero .content h1{
+    font-style: italic;
+    opacity: 1;
+    font-family: var(--secondary-font);
+    color: var(--secondary-text);
+    margin-bottom: 2rem;
+}
+.Phero .content p{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: .9rem;
+    color: var(--text-gray);
+    line-height: 1.5rem;
+}
+
+.Phero .content a {
+    text-decoration: none;
+    color: var(--text-white);
+    width: 30%;
+    height: 2rem;
+    padding: .4rem 1rem ;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    margin-top: 4rem;
+}
+.Phero .content a:hover {
+    color: var(--text-black);
+    font-weight: 500;
+    background-color: var(--bg-colors);
+    border: 1px solid var(--primary-color);
+}
+ /*================Product-list===================*/
+.P-list{
+    height: auto;
+    width: 100%;
+    background-color: var(--third-bg);
+}
+
+.P-list .P-head h3{
+    font-family: var(--primary-font);
+    color: var(--primary-text);
+    
+}
+.P-list .card{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    border: 1px solid var(--text-gray);
+    cursor: pointer;
+}
+.P-list .card-bd a img{
+    height: 6.8rem;
+    width: 6.8rem;
+    border-radius: 50%;
+} 
+/*======================slider========================*/
+.slider{
+    background-color: var(--third-bg);
+}
+.slide{
+    height: 60vh;
+    width:80% ;
+    border-radius: 20px;
+}
+.slider .slide img{
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.slide .carousel-item{
+    position: relative;
+}
+ .slide .carousel-item .line {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text-white)
+}
+.slide .carousel-item .line h1{
+    font-family: var(--secondary-font);
+    font-style: oblique;
+    color: var(--text-black);
+}
+/*================other products====================*/    
+.Grossery{
+    background-color: var(--third-bg);
+    width: 100%;
+    height: 85vh;
+}
+.Grossery .P-head h3{
+    color: var(--primary-text);
+}
+.Grossery .container p{
+    font-weight: 500;
+}
+.Grossery .card{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+    background-color: #02626962;
+    cursor: pointer;
+}
+.Grossery .card-bd img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+/*===============fresh============================*/
+.fresh{
+    background-color: var(--third-bg);
+    width: 100%;
+    height: 55vh;
+}
+.fresh .P-head h3{
+    color: var(--primary-text);
+}
+.fresh .container p{
+    font-weight: 500;
+}
+.fresh .card{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+    background-color: #0c9c0a62;
+    cursor: pointer;
+}
+.fresh .card-bd img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+/*===================milk====================*/
+.milk{
+    background-color: var(--third-bg);
+    width: 100%;
+    height: 55vh;
+}
+.milk .P-head h3{
+    color: var(--primary-text);
+}
+.milk .container p{
+    font-weight: 500;
+}
+.milk .card{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+    background-color: #4183ce62;
+    cursor: pointer;
+}
+.milk .card-bd img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+/*==================other================*/
+
+.other{
+    background-color: var(--third-bg);
+    width: 100%;
+    height: 55vh;
+}
+.other .P-head h3{
+    color: var(--primary-text);
+}
+.other .container p{
+    font-weight: 500;
+}
+.other .card{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+    background-color: #c583096c;
+    cursor: pointer;
+}
+.other .card-bd img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+/*===========footer===============*/
+.foot{
+    background-color: var(--third-bg);
+    height: 50vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========================Responsive===============================*/
+@media(max-width:1200px)
+{
+    .Grossery .card{
+        height: 8rem;
+        width: 8rem;
+    }
+    .Grossery .card-bd img{
+        height: 7rem;
+        width: 7rem;
+    }
+    .fresh .card{
+        height: 8rem;
+        width: 8rem;
+    }
+    .fresh .card-bd img{
+        height: 7rem;
+        width: 7rem;
+    }   
+    .milk .card{
+        height: 8rem;
+        width: 8rem;
+    }
+    .milk .card-bd img{
+        height: 7rem;
+        width: 7rem;
+    }   
+    .other .card{
+        height: 8rem;
+        width: 8rem;
+    }
+    .other .card-bd img{
+        height: 7rem;
+        width: 7rem;
+    }   
+}
+@media(max-width:990px){
+    .container {
+        padding: 0;
+    }
+
+    nav .container .dn {
+        background-color: var(--bg-colors);
+        height: 90vh;
+        width: 100%;
+        
+    }
+
+    .navbar .navbar-nav {
+        text-align: center;
+        background-color: var(--bg-colors);
+        width: 100%;
+    }
+    .navbar .navbar-nav .nav-item a{
+        margin: 15px 0;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    .navbar .d-flex {
+        background-color: var(--bg-colors);
+        width: 50%;
+        margin: auto;
+    }
+
+    .navbar .nav-item a {
+        font-weight: 700;
+    }
+    
+    .Grossery .card{
+        height: 7rem;
+        width: 7rem;
+    }
+    .Grossery .card-bd img{
+        height: 6.5rem;
+        width: 6.5rem;
+    }   
+    .fresh .card{
+        height: 7rem;
+        width: 7rem;
+    }
+    .fresh .card-bd img{
+        height: 6.5rem;
+        width: 6.5rem;
+    }   
+    .milk .card{
+        height: 7rem;
+        width: 7rem;
+    }
+    .milk .card-bd img{
+        height: 6.5rem;
+        width: 6.5rem;
+    } 
+    .other .card{
+        height: 7rem;
+        width: 7rem;
+    }
+    .other .card-bd img{
+        height: 6.5rem;
+        width: 6.5rem;
+    }     
+    
+
+}
+
+@media(max-width:768px){
+    .Grossery{
+        height: auto;
+    }
+    .fresh{
+        height: auto;
+    }
+    .milk{
+        height: auto;
+    }
+    .other{
+        height: auto;
+    }
+}
+
+@media(max-width:576px){
+    .Phero .content{
+        text-align: center;
+    }
+}
+@media(max-width:450px){
+    body{
+        background-image: linear-gradient(rgba(1, 2, 2, 0.3), rgba(12, 14, 12, 0.021), rgba(12, 14, 12, 0.3)), url(./product/p-bg.jpg);
+        background-color: var(--third-bg);
+        height: 100vh;
+    }
+    .Phero{
+        width: 100%;
+        height: 100vh;
+    }
+    .Phero .content{
+        padding: 50% 15%;
+        text-align: center;
+    }
+    .Phero .content p{
+        line-height: 2rem;
+    }
+    .P-list{
+        height: auto;
+    }
+    
+    .P-list .P-head h3{
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    .P-list .card{
+        height: 6rem;
+        width: 6rem;
+    }
+    .P-list .card-bd a img{
+        height: 6rem;
+        width: 6rem;
+    } 
+    .slide{
+        height: 30vh;
+        width:90% ;
+    }
+    .slider .slide img{
+        height: 30vh;
+    }
+
+    .slide .carousel-item .line h1{
+     font-size: 1rem;
+    }
+    .Grossery{
+        height: auto;
+    }
+    .Grossery .P-head h3{
+        font-size: 1rem;
+        letter-spacing:1px;
+    }
+    .Grossery .container p{
+        font-weight: 400;
+    }
+    .Grossery .card{
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+    .Grossery .card-bd img{
+        height: 5rem;
+        width: 5rem;
+    }
+    .fresh{
+        height: auto;
+    }
+    .fresh .P-head h3{
+        font-size: 1rem;
+        letter-spacing:1px;
+    }
+    .fresh .container p{
+        font-weight: 400;
+    }
+    .fresh .card{
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+    .fresh .card-bd img{
+        height: 5rem;
+        width: 5rem;
+    }
+    .milk{
+     height: auto;
+    }
+    .milk .P-head h3{
+        font-size: 1rem;
+        letter-spacing:1px;
+    }
+    .milk .container p{
+        font-weight: 400;
+    }
+    .milk .card{
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+    .milk .card-bd img{
+        height: 5rem;
+        width: 5rem;
+    }
+    .other{
+        height:auto;
+    }
+    .other .P-head h3{
+        font-size: 1rem;
+        letter-spacing:1px;
+    }
+    .other .container p{
+        font-weight: 400;
+    }
+    .other .card{
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+    .other .card-bd img{
+        height: 5rem;
+        width: 5rem;
+    }
+    .foot{
+        height: auto;
+    }
+}
