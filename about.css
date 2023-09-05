@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,100;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Tilt+Prism&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f5f2f2fa;
+}
+
+:root {
+    /*background-color*/
+    --primary-color: #044b14;
+    --secondary-color: #2adb24;
+    --bg-colors: #baf0cc;
+    --third-bg: #d5dfd8fb;
+    --bg-white: #0e0a0a1e;
+    --bg-black: #000;
+
+    /* Text style */
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: font-family: 'Roboto', sans-serif;
+    --primary-text: #044b14;
+    --secondary-text: #ec2308;
+    --text-white: #fff;
+    --text-black: #151515;
+    --text-gray: #333;
+}
+
+::-webkit-scrollbar {
+    width: .375rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 30px;
+}
+/*==============================================*/
+.about-pg{
+    background-color: var(--third-bg);
+}
+.header_wrapper .navbar {
+    background: var(--bg-colors);
+    height: 3.5rem;
+    box-shadow: 10px 5px 5px gray;
+}
+
+.container .navbar-toggler {
+    border: none;
+}
+
+.container .navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.container .navbar-brand {
+    font-size: 1.5rem;
+    color: var(--primary-text);
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.container .nav-item a {
+    text-transform: uppercase;
+    color: var(--text-black);
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+.container .nav-item a:hover {
+    color: var(--secondary-color);
+}
+
+.d-flex .search {
+    width: 80%;
+    height: 2rem;
+    outline: none;
+    border-radius: 60px;
+    border-color: 3px solid #044b14;
+    margin-right: -35px;
+}
+
+.d-flex .btn {
+    width: 40%;
+    height: 2rem;
+    border-radius: 60px;
+    color: var(--text-white);
+    font-weight: 400;
+    background-color: var(--primary-color);
+
+    outline: none;
+    border: none;
+}
+/*===================================================*/
+.slid{
+     padding-top:5%;
+}
+.s-head{
+    color: var(--primary-text);
+    font-family: var(--primary-font);
+    
+}
+.slider{
+    background-color: var(--third-bg);
+    margin:5% 0;
+}
+.slide{
+    height: 60vh;
+    width:90% ;
+    border-radius: 20px;
+}
+.slider .slide img{
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.slide .carousel-item{
+    position: relative;
+}
+ .slide .carousel-item .line {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text-white)
+}
+.slide .carousel-item .line h1{
+    font-family: var(--secondary-font);
+    font-style: oblique;
+    color: var(--text-black);
+}
+.s-head{
+    color: #044b14;
+    font-family: var(--primary-font);
+}
+.slid .a-subhead p{
+ font-size: .8rem;
+}
+
+
+
+
+@media(max-width:990px){
+    nav .container .dn {
+        background-color: var(--bg-colors);
+        height: 90vh;
+        width: 100%;
+        
+    }
+
+    .navbar .navbar-nav {
+        text-align: center;
+        background-color: var(--bg-colors);
+        width: 100%;
+    }
+    .navbar .navbar-nav .nav-item a{
+        margin: 15px 0;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+
+    .navbar .d-flex {
+        background-color: var(--bg-colors);
+        width: 50%;
+        margin: auto;
+    }
+
+    .navbar .nav-item a {
+        font-weight: 700;
+    }
+
+}
+
+
+@media(max-width:450px){
+    .s-head{
+        padding-top: 10%;
+    }
+    .slide{
+        height: 30vh;
+        width:90% ;
+    }
+    .slider .slide img{
+        height: 30vh;
+    }
+
+    .slide .carousel-item .line h1{
+     font-size: 1rem;
+    }
+    .slide .carousel-item .line h4{
+        font-size: .8rem;
+    }
+}
